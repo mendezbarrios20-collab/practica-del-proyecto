@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PerfectFit Bowl: cafetería fitness con desayunos, snacks y comidas para antes y después de entrenar.">
+  <title>PerfectFit Bowl | Cafetería fitness</title>
+  <link rel="stylesheet" href__="css/styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="encabezado">
+    <a href__="#inicio" class="marca">PerfectFit Bowl</a>
+    <nav class="menu" aria-label="Navegación principal">
+      <a href__="#inicio">Inicio</a>
+      <a href__="#propuesta">Propuesta</a>
+      <a href__="#catalogo">Catálogo</a>
+      <a href__="#asistente">Asistente</a>
+      <a href__="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1. PORTADA -->
+    <section id="inicio" class="portada">
+      <h1>PerfectFit Bowl</h1>
+      <p class="eslogan">
+        Estoy construyendo un estilo de vida y esta cafetería me ayuda a mantenerlo.
+      </p>
+      <p>
+        Cafetería fitness con alimentos preparados, prácticos, para cada momento
+        de tu rutina: desayuno, snacks y antes o después de entrenar.
+      </p>
+      <a href__="#catalogo" class="boton">Ver catálogo</a>
+    </section>
+
+    <!-- 2. PROPUESTA -->
+    <section id="propuesta" class="seccion">
+      <h2>¿Qué nos hace diferentes?</h2>
+      <p>
+        No solo ofrecemos productos saludables: te ayudamos a encontrar la opción
+        adecuada según el momento de tu rutina.
+      </p>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <h3>Para quién</h3>
+          <p>Jóvenes y adultos activos con rutinas ocupadas que quieren cuidar su alimentación.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Qué ofrecemos</h3>
+          <p>Alimentos preparados en cuatro categorías: desayunos, snacks, antes y después de entrenar.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Nuestro valor</h3>
+          <p>Alimentación, practicidad e información en un solo lugar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. CATÁLOGO (las tarjetas las crea JavaScript en el paso 6) -->
+    <section id="catalogo" class="seccion">
+      <h2>Catálogo</h2>
+      <div id="filtros" class="filtros"></div>
+      <div id="lista-productos" class="rejilla"></div>
+    </section>
+
+    <!-- 4. ASISTENTE DE IA (se activa en el paso 10) -->
+    <section id="asistente" class="seccion">
+      <h2>¿No sabes qué elegir?</h2>
+      <p>Cuéntanos qué necesitas y te recomendamos un producto del catálogo.</p>
+      <p><em>Próximamente.</em></p>
+    </section>
+
+    <!-- 5. CONTACTO -->
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">¿Qué necesitas?</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="boton">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+    <p>&copy; 2026 PerfectFit Bowl · Proyecto final Jóvenes Creativos</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
